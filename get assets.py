@@ -8,7 +8,7 @@ assets_path = expanduser(
 assets_converted_path = expanduser("~") + "/Pictures/Winodws Assets/Assets Converted/"
 
 filter_logos = True  # determines whether the program should remove images that look like logos
-filter_portrait_pictures = True  # determines whether the program should remove portrait images
+filter_portrait_pictures = False  # determines whether the program should remove portrait images
 
 for f in listdir(assets_path):
     copy(assets_path + f, assets_converted_path + f + ".png")
